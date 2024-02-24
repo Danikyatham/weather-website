@@ -16,18 +16,27 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-    color: black
+    color: black;
     padding: 20px;
     text-align: center;
     width: 300px;
     max-width: 90%;
     border: 1px solid rgb(16, 15, 15);
     background: transparent;
-    backdrop-filter: blur(20px) ; /* Glassmorphism effect */
+    backdrop-filter: blur(20px); /* Glassmorphism effect */
 }
-::placeholder{
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    #weather-container {
+        width: 80%;
+    }
+}
+
+::placeholder {
     color: black;
 }
+
 #city-input {
     background: rgba(178, 236, 179, 0.1);
     border: none;  
