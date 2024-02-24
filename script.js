@@ -4,7 +4,7 @@ window.onload = function() {
     document.getElementById('search-btn').addEventListener('click', function() {
         var city = document.getElementById('city-input').value;
 
-        fetch('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey)
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
