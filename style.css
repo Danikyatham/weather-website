@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/Designer (2).png");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    color: black
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    max-width: 90%;
+    border: 1px solid rgb(16, 15, 15);
+    background: transparent;
+    backdrop-filter: blur(20px) ; /* Glassmorphism effect */
+}
+::placeholder{
+    color: black;
+}
+#city-input {
+    background: rgba(178, 236, 179, 0.1);
+    border: none;  
+    color: black; /* This makes the input text color white */
+    padding: 10px;
+    width: 90%;
+}
+
+#search-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+#search-btn:hover {
+    background: white;
+}
